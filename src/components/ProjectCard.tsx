@@ -60,7 +60,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             <span className="text-gray-500">Progress</span>
             <span className="font-medium text-navy-dark">{percentRaised}%</span>
           </div>
-          <Progress value={percentRaised} className="h-2 bg-gray-200" indicatorClassName="bg-gold" />
+          <Progress value={percentRaised} className="h-2 bg-gray-200" />
           <div className="flex justify-between text-sm">
             <span className="font-medium text-navy-dark">
               ${(project.raisedAmount / 1000).toFixed(1)}k raised
